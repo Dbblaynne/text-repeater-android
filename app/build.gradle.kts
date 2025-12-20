@@ -1,15 +1,24 @@
-plugins { id("com.android.application") }
+plugins {
+    id("com.android.application")
+    kotlin("android")
+}
 android {
-  namespace = "com.textrepeater"
-  compileSdk = 34
-  defaultConfig {
-    applicationId = "com.textrepeater"
-    minSdk = 24
-    targetSdk = 34
-    versionCode = 1
-    versionName = "1.0"
-  }
+    namespace = "com.textrepeater"
+    compileSdk = 34
+    defaultConfig {
+        applicationId = "com.textrepeater"
+        minSdk = 24
+        targetSdk = 34
+        versionCode = 1
+        versionName = "1.0"
+    }
+    buildTypes {
+        release { isMinifyEnabled = false }
+    }
+    buildFeatures { viewBinding = true }
 }
 dependencies {
-  implementation("androidx.core:core-ktx:1.12.0")
+    implementation("androidx.core:core-ktx:1.12.0")
+    implementation("androidx.appcompat:appcompat:1.6.1")
+    implementation("com.google.android.material:material:1.10.0")
 }

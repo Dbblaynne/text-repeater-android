@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:padding="16dp">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="Text Repeater" android:textSize="24sp" android:textStyle="bold"/>
+    <EditText android:id="@+id/inputText" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_marginTop="16dp"
+        android:hint="Enter text to repeat" android:inputType="text"/>
+    <EditText android:id="@+id/repeatCount" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_marginTop="8dp"
+        android:hint="Repeat count" android:inputType="number" android:text="3"/>
+    <Button android:id="@+id/repeatButton" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_marginTop="16dp"
+        android:text="REPEAT TEXT"/>
+    <TextView android:id="@+id/outputText" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_marginTop="24dp"
+        android:text="Output will appear here" android:textSize="16sp"
+        android:background="#f0f0f0" android:padding="8dp"/>
+</LinearLayout>
